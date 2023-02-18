@@ -1,0 +1,80 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: sans-serif;
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(61, 106, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-body {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    background-color: rgba(255, 255, 255, 0.295);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cell {
+    font-family: sans-serif;
+    color: red;
+    background-color: rgba(54, 169, 223, 0.377);
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-keeper {
+    margin-top: 16px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one, .two {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.reset {
+    width: 100px;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(54, 169, 223, 0.377);
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.reset:hover {
+    background-color: rgba(54, 170, 223, 0.623);
+}
